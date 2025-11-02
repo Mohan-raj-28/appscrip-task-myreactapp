@@ -1,23 +1,20 @@
 import React from "react";
-import "./style.css";
+import Header from "./Components/Header";
+import Sidebar from "./Components/Sidebar";
 import ProductGrid from "./Components/ProductGrid";
-
+import Footer from "./Components/Footer";
+import "./index.css";
 
 function App() {
   return (
-    <main>
-      <header className="header">
-        <h1>Product Listing Page</h1>
-      </header>
-
-      <section className="content">
+    <div className="app-container">
+      <Header />
+      <div className="main-content">
+        <Sidebar />
         <ProductGrid />
-      </section>
-
-      <footer className="footer">
-        <p>© 2025 Appscrip Task - Your Name</p>
-      </footer>
-    </main>
+      </div>
+      <Footer />
+    </div>
   );
 }
 

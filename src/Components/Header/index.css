@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111827;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.search-bar {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  width: 250px;
+}
+
+@media (max-width: 600px) {
+  .search-bar {
+    width: 100%;
+  }
+}
